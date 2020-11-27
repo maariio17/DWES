@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form method="post" action="form.php" name="formulario">
+            <div class="form-element">
+                <label>Username</label>
+                <input type="text" name="username" pattern="[a-zA-Z0-9]+" required />
+            </div>
+            <br>
+            <div class="form-element">
+                <label>Telephone</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+            </div>
+            <br>
+            <button type="submit" name="register" value="ir a.." onclick="enviar()">Enviar</button>
+        </form>
+    </body>
+</html>
